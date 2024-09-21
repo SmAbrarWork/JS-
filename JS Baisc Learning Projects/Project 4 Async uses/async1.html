@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="fe">hello world</h1> 
+   <button id="stop">Stop</button>
+</body>
+<script>
+
+   const update = function () {
+     document.querySelector('h1').innerHTML = 'This runs Succefully'
+   }
+    
+     let dontChange = setTimeout(update, 3000)
+
+    document.querySelector('#stop').
+    addEventListener('click', ()=>{
+        clearTimeout(dontChange)
+    })
+
+</script>
+</html>

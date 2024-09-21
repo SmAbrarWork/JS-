@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+    flex-direction: column; /* Stack items vertically */
+    background-color: gray;
+}
+
+div {
+    padding: 10px; /* Padding to give space inside the box */
+    border: 4px solid blueviolet; /* Solid border with a width of 2px */
+    border-radius: 0; /* No rounding, ensures square shape */
+    display: inline-block; /* Ensures the <dt> elements are boxes */
+    width: 250px; /* Width of the box */
+    height: 80px; /* Height of the box */
+    line-height: 80px; /* Vertically centers the text within the box */
+    margin: 10px; /* Spacing between boxes */
+    background-color: brown;
+    border-radius: 2cm;
+    font-weight: bolder;
+}

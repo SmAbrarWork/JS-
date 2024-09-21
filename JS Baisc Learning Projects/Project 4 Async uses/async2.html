@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+
+    <h1>Random Number Generator</h1>
+    <hr>
+    <br>
+    <button class="Start">Start</button>
+    <br><br>
+    <button class="Stop">Stop</button>
+
+<script>
+    let intervalId;
+
+    const startPrint = function () {
+        intervalId = setInterval(() => {
+            document.querySelector('h1').innerText = (Math.random() * 100).toFixed(2);
+        }, 1000);
+    }
+
+    const stopPrint = function () {
+        clearInterval(intervalId);
+        document.querySelector('h1').innerText = 'Random Number Generator';
+    }
+
+    document.querySelector('.Start').addEventListener('click', startPrint);
+    document.querySelector('.Stop').addEventListener('click', stopPrint);
+</script>
+
+</body>
+</html>
